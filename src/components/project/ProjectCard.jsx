@@ -1,6 +1,18 @@
 export function ProjectCard({ project, onClick }) {
-  const handleClick = () => {
-    document.startViewTransition(() => onClick(project));
+  const handleClick = (e) => {
+    // Guardamos la posición de scroll actual
+    const scrollY = window.scrollY;
+
+    if (document.startViewTransition) {
+      document.startViewTransition(() => onClick(project));
+    } else {
+      onClick(project);
+    }
+
+    // Restauramos el scroll en el siguiente frame
+    requestAnimationFrame(() => {
+      window.scrollTo(0, scrollY);
+    });
   };
 
   return (
@@ -8,11 +20,12 @@ export function ProjectCard({ project, onClick }) {
       className="relative w-full max-w-sm h-[400px] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform hover:scale-105"
       onClick={handleClick}
     >
-      {/* Imagen de fondo */}
+      {/* Imagen de fondo con nombre de transición para animar */}
       <img
         src={project.image}
         alt={project.name}
         className="absolute inset-0 w-full h-full object-cover"
+        view-transition-name={`project-image-${project.id}`}
       />
 
       {/* Overlay oscuro en la parte inferior */}
