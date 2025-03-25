@@ -35,7 +35,7 @@ export default function Portfolio() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 mt-4">
-          Sitio en desarrollo...
+          Sitio en desarrollo...Jenkins
         </p>
         {/* Botón que lleva a la sección de proyectos */}
         <button
