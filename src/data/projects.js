@@ -4,7 +4,7 @@ export default [
     name: "CORE - Sistema de Gestión para Restaurantes (En Desarrollo)",
     description:
       "📌 Tecnologías: Java, Spring Boot, React.js, MySQL, Docker\n" +
-      "📌 Objetivo: Digitalizar y optimizar la operación de restaurantes mediante una plataforma integral.\n\n" +
+      "📌 Objetiv: Digitalizar y optimizar la operación de restaurantes mediante una plataforma integral.\n\n" +
       "🔹 Gestión de meseros, mesas y pedidos, permitiendo una asignación eficiente de recursos.\n" +
       "🔹 Administración de carta y platillos, con precios dinámicos y opciones personalizadas.\n" +
       "🔹 Estadísticas y reportes sobre consumo, tendencias y eficiencia del servicio.\n" +
@@ -13,7 +13,7 @@ export default [
       "🔹 Despliegue en servidor VPS con Docker, garantizando estabilidad y mantenimiento ágil.\n\n" +
       "📌 Impacto esperado: Reducción de errores en pedidos y mejora en la experiencia del cliente con un sistema digitalizado.",
     image:
-      "https://c0.wallpaperflare.com/preview/524/860/912/screen-code-coding-programming.jpg",
+      "../../src/assets/images/core.png",
     owner: {
       name: "Isaac",
       avatar:
@@ -32,7 +32,7 @@ export default [
       "🔹 Despliegue en AWS con Docker para asegurar escalabilidad y seguridad.\n\n" +
       "📌 Impacto esperado: Automatización del proceso de venta y expansión del mercado digital de Libamaq.",
     image:
-      "https://t3.ftcdn.net/jpg/07/52/08/12/360_F_752081227_nruXgif94zBL0Q4nYKNbrp0wQGvx6d6r.jpg",
+      "../../src/assets/images/libamaq.png",
     owner: {
       name: "Jonathan, Isaac",
       avatar:
@@ -50,7 +50,7 @@ export default [
       "🔹 Base de datos MySQL para almacenamiento eficiente de contenido y multimedia.\n" +
       "🔹 Fácil personalización de diseños y contenido según las necesidades del negocio.\n\n" +
       "📌 Impacto esperado: Brindar autonomía a empresas para actualizar su contenido sin depender de desarrolladores.",
-    image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
+    image: "../../src/assets/images/gardenplus.png",
     owner: {
       name: "Erick, Isaac",
       avatar:
@@ -62,7 +62,7 @@ export default [
     name: "Silversmow.com - Web dinámica finalizada",
     description:
       "📌 Desarrollado para un cliente en Estados Unidos, con un diseño personalizado y una galería extensa para mostrar sus proyectos de jardinería.",
-    image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
+    image: "../../src/assets/images/silversmow.png",
     owner: {
       name: "Isaac",
       avatar:

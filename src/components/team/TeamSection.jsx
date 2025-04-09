@@ -1,10 +1,18 @@
-import { TeamList } from "./TeamList";
+import { TeamGallery } from "./TeamGallery";
+import { motion } from "framer-motion";
 
-export function TeamSection({ team }) {
+function TeamSection({ team }) {
   return (
-    <div className="mt-8">
-      <h2 className="text-xl font-bold mb-4 text-center">Nuestro Equipo</h2>
-      <TeamList members={team} />
-    </div>
+    <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full"
+    >
+      <TeamGallery members={team} />
+    </motion.div>
   );
 }
+
+export default TeamSection;
+export { TeamSection };
