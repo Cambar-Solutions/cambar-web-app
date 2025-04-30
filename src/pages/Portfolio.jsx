@@ -2,7 +2,7 @@ import { useRef, useState, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useProjects } from "../hooks/useProjects";
 import { useTeam } from "../hooks/useTeam";
-import logo from "../assets/images/logo.png";
+import logo from "/logo_Cambar.png";
 
 // Importar componentes de forma perezosa correctamente
 const ProjectList = lazy(() => import("../components/project/ProjectList"));
@@ -75,7 +75,7 @@ export default function Portfolio() {
       <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
         <nav className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <img src={logo} alt="Cambar Logo" className="h-8" />
+            <img src={logo} alt="Cambar Logo" className="h-12" />
           </a>
           
           <div className="hidden md:flex space-x-8 text-sm font-medium">
