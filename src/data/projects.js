@@ -13,7 +13,7 @@ export default [
       "🔹 Despliegue en servidor VPS con Docker, garantizando estabilidad y mantenimiento ágil.\n\n" +
       "📌 Impacto esperado: Reducción de errores en pedidos y mejora en la experiencia del cliente con un sistema digitalizado.",
     image:
-      "../../src/assets/images/core.png",
+      "/core.png",
     owner: {
       name: "Isaac",
       avatar:
@@ -32,7 +32,7 @@ export default [
       "🔹 Despliegue en AWS con Docker para asegurar escalabilidad y seguridad.\n\n" +
       "📌 Impacto esperado: Automatización del proceso de venta y expansión del mercado digital de Libamaq.",
     image:
-      "../../src/assets/images/libamaq.png",
+      "/libamaq.png",
     owner: {
       name: "Jonathan, Isaac",
       avatar:
@@ -50,7 +50,7 @@ export default [
       "🔹 Base de datos MySQL para almacenamiento eficiente de contenido y multimedia.\n" +
       "🔹 Fácil personalización de diseños y contenido según las necesidades del negocio.\n\n" +
       "📌 Impacto esperado: Brindar autonomía a empresas para actualizar su contenido sin depender de desarrolladores.",
-    image: "../../src/assets/images/gardenplus.png",
+    image: "/gardenplus.png",
     owner: {
       name: "Erick, Isaac",
       avatar:
@@ -62,7 +62,7 @@ export default [
     name: "Silversmow.com - Web dinámica finalizada",
     description:
       "📌 Desarrollado para un cliente en Estados Unidos, con un diseño personalizado y una galería extensa para mostrar sus proyectos de jardinería.",
-    image: "../../src/assets/images/silversmow.png",
+    image: "/silversmow.png",
     owner: {
       name: "Isaac",
       avatar:

@@ -1,9 +1,11 @@
 import { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-// Importar componentes de forma perezosa
+// Carga perezosa de tus páginas
 const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Report     = lazy(() => import('./pages/Report')); 
 
-// Componente de carga
+// Fallback mientras cargan los chunks
 const LoadingFallback = () => (
   <div className="flex items-center justify-center h-screen w-screen bg-[#0f172a]">
     <div className="animate-pulse flex flex-col items-center">
@@ -17,7 +19,11 @@ const LoadingFallback = () => (
 export default function App() {
   return (
     <Suspense fallback={<LoadingFallback />}>
-      <Portfolio />
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+
+        <Route path="/reporte" element={<Report />} />
+      </Routes>
     </Suspense>
   );
 }
